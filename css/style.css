@@ -61,3 +61,32 @@ nav {
 img {
 	margin: 40px 8px;
 }
+footer {
+	text-transform: uppercase;
+	margin: 0 20px;
+	background-color: #0D2C40;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+}
+.copyright {
+	font-family: "Raleway", sans-serif;
+	float: left;
+}
+.message {
+	font-family: "Raleway", sans-serif;
+	float: right;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+.name {
+	color: #F15B31;
+	font-weight: 700;
+}
