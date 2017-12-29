@@ -21,6 +21,11 @@ a {
 	font-weight: 600;
 	font-size: 18px;
 	margin: 0 20px;
+	border-bottom: 2px solid transparent;
+}
+
+a:hover {
+	border-color: white;
 }
 
 h1{
@@ -53,14 +58,17 @@ p {
 	line-height: 26px;
 	font-size: 18px;
 }
+
 nav {
 	background-color: #00A6B3;
 	color: #FFFFFF;
 	padding: 20px 0;
 }
+
 img {
 	margin: 40px 8px;
 }
+
 footer {
 	text-transform: uppercase;
 	margin: 0 20px;
@@ -70,14 +78,17 @@ footer {
 	letter-spacing: .08em;
 	font-weight: 500;
 }
+
 .copyright {
 	font-family: "Raleway", sans-serif;
 	float: left;
 }
+
 .message {
 	font-family: "Raleway", sans-serif;
 	float: right;
 }
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -86,6 +97,7 @@ footer {
 	height: 0;
 	font-size: 0;
 }
+
 .name {
 	color: #F15B31;
 	font-weight: 700;
