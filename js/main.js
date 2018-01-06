@@ -1,4 +1,25 @@
-var cards = ["queen", "queen", "king", "king"];
+var cards = [
+{
+	rank: 'queen',
+	suit: 'hearts',
+	cardImage: "images/queen-of-hearts.png"
+},
+{
+	rank: 'queen',
+	suit: 'diamonds',
+	cardImage: "images/queen-of-diamonds.png"
+},
+{
+	rank: 'king',
+	suit: 'hearts',
+	cardImage: "images/king-of-hearts.png"
+},
+{
+	rank: 'king',
+	suit: 'diamonds',
+	cardImage: "images/king-of-diamonds.png"
+}
+];
 var cardsInPlay = [];
 
 var checkForMatch = function () {
@@ -14,8 +35,8 @@ var flipCard = function (cardId) {
 	cardsInPlay.push(cards[cardId]);
 	if (cardsInPlay.length === 2) {
 		checkForMatch();
-	};
+	}
 };
 
 flipCard(0);
-// flipCard(2);
+flipCard(2);
