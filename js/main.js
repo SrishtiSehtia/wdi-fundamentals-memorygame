@@ -53,3 +53,13 @@ var createBoard = function () {
 };
 
 createBoard();
+
+var reset = function () {
+	for (var i = 0; i < cards.length; i++) {
+		var allCards = document.getElementsByTagName('img')
+		allCards[i].setAttribute('src', 'images/back.png');
+		cardsInPlay = []; 
+	}
+};
+
+document.querySelector('button').addEventListener('click', reset);
