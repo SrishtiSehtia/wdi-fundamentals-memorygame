@@ -22,11 +22,17 @@ var cards = [
 ];
 var cardsInPlay = [];
 
+var score = 0;
+
 var checkForMatch = function () {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 		alert("You found a match!");
+		score += 1;
+		var scoreElement = document.querySelector('span');
+		scoreElement.textContent = score;
 	} else {
 		alert("Sorry, try again.");
+		scoreElement.textContent = score;
 	}
 };
 
