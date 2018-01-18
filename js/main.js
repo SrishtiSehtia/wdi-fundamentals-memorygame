@@ -29,11 +29,10 @@ var checkForMatch = function () {
 		alert("You found a match!");
 		score += 1;
 		var scoreElement = document.querySelector('span');
-		scoreElement.textContent = score;
 	} else {
 		alert("Sorry, try again.");
-		scoreElement.textContent = score;
 	}
+	scoreElement.textContent = score;
 };
 
 var flipCard = function () {
@@ -60,12 +59,19 @@ var createBoard = function () {
 
 createBoard();
 
+// var reset = function () {
+// 	for (var i = 0; i < cards.length; i++) {
+// 		var allCards = document.getElementsByTagName('img')
+// 		allCards[i].setAttribute('src', 'images/back.png');
+// 		cardsInPlay = []; 
+// 	}
+// };
+
 var reset = function () {
-	for (var i = 0; i < cards.length; i++) {
-		var allCards = document.getElementsByTagName('img')
-		allCards[i].setAttribute('src', 'images/back.png');
-		cardsInPlay = []; 
-	}
+	var board = document.querySelector('.board')
+	board.innerHTML = "";
+	createBoard();
+	cardsInPlay = [];
 };
 
 document.querySelector('button').addEventListener('click', reset);
